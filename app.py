@@ -1,7 +1,9 @@
+#import lib
 from flask import Flask, request, render_template, url_for, redirect, jsonify
 
 app = Flask(__name__)
 
+#Main Route
 @app.route("/",methods=["GET"])
 def welcome():
     return("<h1>Welcome to Flask Learning</h1>")
